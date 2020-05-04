@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="css/animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="nav">
-    <div class="grid">
+  <div class="container">
+    <nav class="nav">
       <div class="item-logo">
         <h3>
           ListAnime
@@ -22,27 +23,27 @@
         <a href="#"><span class="icon-monitor"></span>Anime</a>
         <a href="#"><span class="icon-book-open"></span>Manga</a>
         <a href="#"><span class="icon-user"></span>Persona</a>
-	<a href="#"><span class="icon-music"></span>Music</a>
+        <a href="#"><span class="icon-music"></span>Music</a>
       </div>
-      <form class="search" id="Formulario">
+      <form class="item-search" id="Formulario">
         <div class="name">
           <input type="text" id="nani" placeholder="Search">
           <button type="submit" name="button" class="boton icon-search"></button>
         </div>
       </form>
-    </div>
-  </nav>
-  <main class="main">
-    <div class="grid">
+    </nav>
+    <main class="main">
       <div class="buscar">
         <h2>Resultado:</h2>
       </div>
       <div id="resultado">
+        <div class="card" id="respuesta">
+          <img src="img/imgsearch.svg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="grid">
+    </main>
+    <footer>
       <div class="footer-item-link">
         <a href="#">
           <span class="icon-facebook">Facebook</span>
@@ -57,11 +58,11 @@
           <span class="icon-github"></span>Github
         </a>
       </div>
-      <div class="item-autor">
+      <div class="footer-item-autor">
         <p>Hecho por <span class="icon-heart">Jose Gregorio Vasquez Pineda</span></p>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>

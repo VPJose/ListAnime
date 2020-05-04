@@ -5,12 +5,12 @@ var resultado = document.getElementById('resultado');
 formulaio.addEventListener('submit', e => {
   e.preventDefault();
   var bsq = document.querySelector('#nani').value;
-  var card = document.getElementById('card');
+  var respuesta = document.getElementById('respuesta');
 
 
-  while (card) {
-    resultado.removeChild(card);
-    var card = document.getElementById('card');
+  while (respuesta) {
+    resultado.removeChild(respuesta);
+    var respuesta = document.getElementById('respuesta');
   }
 
   fetch(`https://api.jikan.moe/v3/search/anime?q=${bsq}&limit=18`)  // &order_by=title, no quiso agarrar
