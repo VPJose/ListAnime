@@ -6,7 +6,7 @@
 
 body{
 	background: rgba(30, 196, 152, 0.79);
-  height: 500px;
+	height: 100%;
 }
 
 .grid{
@@ -25,8 +25,13 @@ nav {
   align-content: center;
   height: 50px;
 	width: 100%;
+	position: fixed;
+	top: 0;
 }
 
+nav .grid{
+  grid-template-columns: 0.5fr 1fr 1fr;
+}
 .item-logo{
   text-align: center;
   padding-top: 10px;
@@ -51,7 +56,7 @@ a {
 }
 
 #nani{
-	width: 30%;
+	width: 36.5%;
 	height: 30px;
 	border-radius: 50px;
 	color: rgba(0, 0, 0, 0.75);
@@ -65,7 +70,7 @@ a {
 .boton{
 	position: absolute;
 	z-index: 2;
-	right: 2.6%;
+	right: 3.6%;
 	width: 28px;
 	height: 28px;
 	border-radius: 100%;
@@ -82,9 +87,12 @@ a {
 /*MAIN*/
 main{
   width: 95%;
-  height: 900px;
+  height: 90vh;
 	background: rgba(59, 117, 38, 0.69);
-	margin: 2%;
+	margin-top: 80px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 20px;
 }
 
 .buscar{
@@ -117,7 +125,7 @@ main{
   text-align: center;
 	border: 2px solid;
 	box-shadow: 1px 1px 2px #000;
-	border-radius: 20px;
+	border-radius: 10px;
 	background: #fff;
 }
 
@@ -129,7 +137,7 @@ main{
   font-size: 9.5px;
   height: 30px;
 	border-bottom: 3px solid;
-	border-radius: 18px 18px 0 0;
+	border-radius: 8px 8px 0 0;
 	text-align: center;
 }
 
@@ -180,7 +188,7 @@ main{
 	font-size: 15px;
 	background: #000000;
 	color: #fff;
-	border-radius: 0 0 20px 20px;
+	border-radius: 0 0 10px 10px;
 }
 
 footer{
@@ -235,7 +243,8 @@ footer .grid{
 		right: 4%;
 	}
 	main{
-    height: 2500px;
+		height: 80%;
+    /*height: 2500px;*/
   }
   .item{
     width: 45%;
@@ -284,14 +293,18 @@ footer .grid{
 		top: 3.5px;
 	}
 	main{
-		height: 4940px;
+		height: 80%;
 	}
 
   .item{
     width: 80%;
   }
-
+	.card img{
+		width: 60%;
+	}
 	footer{
+		position: relative;
+		bottom: 0;
 		width: 100%;
 		height: 200px;
 	}
