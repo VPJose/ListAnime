@@ -4,7 +4,7 @@ var resultado = document.getElementById('resultado');
 
 formulaio.addEventListener('submit', e => {
   e.preventDefault();
-  var bsq = document.querySelector('#nani').value;
+  var bsq = document.querySelector('.search').value;
 
   fetch(` https://api.jikan.moe/v3/search/anime?q=${bsq}&limit=30`)
   .then( res => {
