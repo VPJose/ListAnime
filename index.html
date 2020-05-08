@@ -15,27 +15,94 @@
     <nav>
       <div class="nav">
         <div class="item-logo">
-          <h3>
-            ListAnime
-          </h3>
+          <a href="index.html">
+            <h3>
+              ListAnime
+            </h3>
+          </a>
         </div>
         <div class="item-link">
-          <a href="#"><span class="icon-home"></span>Inicio</a>
-          <a href="#"><span class="icon-monitor"></span>Anime</a>
-          <a href="#"><span class="icon-book-open"></span>Manga</a>
-          <a href="#"><span class="icon-user"></span>Persona</a>
-          <a href="#"><span class="icon-music"></span>Music</a>
+          <a href="#">
+            <span class="icon-home"></span>
+            <p>Inicio</p>
+          </a>
+          <a href="#">
+            <span class="icon-monitor"></span>
+            <p>Anime</p>
+          </a>
+          <a href="#">
+            <span class="icon-book-open"></span>
+            <p>Manga</p>
+          </a>
+          <a href="#">
+            <span class="icon-user"></span>
+            <p>Persona</p>
+          </a>
+          <a href="#">
+            <span class="icon-music"></span>
+            <p>Music</p>
+          </a>
         </div>
-        <form class="item-search" id="Formulario">
+        <form class="item-search" id="nav-formulario">
           <input type="text" class="search" placeholder="Search">
           <button type="submit" name="button" class="search-boton icon-search"></button>
         </form>
+        <div class="menu" id="barra-lateral">
+          <span class="icon-menu"></span>
+        </div>
       </div>
     </nav>
+    <div class="menu-lateral" id="menu-lateral">
+      <div class="contenedor menu-active">
+        <div class="menu-logo">
+          <a href="index.html">
+            <h3> ListAnime </h3>
+          </a>
+        </div>
+        <div class="menu-link">
+          <a href="#">
+            <span class="icon-home"></span>
+            <p>Inicio</p>
+          </a>
+          <a href="#">
+            <span class="icon-monitor"></span>
+            <p>Anime</p>
+          </a>
+          <a href="#">
+            <span class="icon-book-open"></span>
+            <p>Manga</p>
+          </a>
+          <a href="#">
+            <span class="icon-user"></span>
+            <p>Persona</p>
+          </a>
+          <a href="#">
+            <span class="icon-music"></span>
+            <p>Music</p>
+          </a>
+        </div>
+        <form class="menu-search" id="barra-formulario">
+          <input type="text" class="search" placeholder="Search">
+          <button type="submit" name="button" class="menu-boton icon-search"></button>
+        </form>
+      </div>
+    </div>
     <main>
       <div class="main">
         <div class="buscar">
-          <h2>Resultado:</h2>
+          <form class="formulario-busqueda" id="formulario-busqueda">
+          <div class="busqueda">
+            <select class="">
+              <option>Tipo</option>
+              <option value="anime">Anime</option>
+              <option value="manga">Manga</option>
+              <option value="person">Persona</option>
+              <option value="music">Musica</option>
+            </select>
+            <input type="text" name="nombre" value="">
+            <button type="submit" name="button" class="icon-search"></button>
+          </div>
+          </form>
         </div>
         <div id="resultado">
           <div class="img-search" id="respuesta">
