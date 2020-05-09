@@ -7,10 +7,12 @@ let barraLateral =document.getElementById('barra-lateral');
 
 //EVENTOS
 navFormulario.addEventListener('submit', e => {
+  e.preventDefault();
   formularioBusqueda('anime',e);
 });
 
 barraFormulario.addEventListener('submit', e => {
+  e.preventDefault();
   formularioBusqueda('anime',e);
   desplazarFormulario(e);
 });
